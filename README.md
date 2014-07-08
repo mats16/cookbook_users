@@ -1,17 +1,12 @@
-login_users Cookbook
+users Cookbook
 ====================
-TODO: Enter the cookbook description here.
-
-e.g.
-This cookbook makes your favorite breakfast sandwich.
+This cookbook makes users.
 
 Requirements
 ------------
-TODO: List your cookbook requirements. Be sure to include any requirements this cookbook has on platforms, libraries, other cookbooks, packages, operating systems, etc.
 
-e.g.
-#### packages
-- `toaster` - login_users needs toaster to brown your bagel.
+#### cookbook
+- `user` - users needs "user" official(opscode) cookbook
 
 Attributes
 ----------
@@ -36,17 +31,14 @@ e.g.
 
 Usage
 -----
-#### login_users::default
-TODO: Write usage instructions for each cookbook.
-
-e.g.
-Just include `login_users` in your node's `run_list`:
+#### users::default
+Just include `users` in your node's `run_list`:
 
 ```json
 {
   "name":"my_node",
   "run_list": [
-    "recipe[login_users]"
+    "recipe[users]"
   ]
 }
 ```
