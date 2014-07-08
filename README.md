@@ -13,7 +13,7 @@ Data Bags
 This cookbook create users from "users" data_bag.
 
 #### users::100.json
-```
+```json
 {
   "id": "100",
   "username": "hogehoge",
