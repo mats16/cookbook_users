@@ -8,26 +8,23 @@ Requirements
 #### cookbook
 - `user` - users needs "user" official(opscode) cookbook
 
-Attributes
+Data Bags
 ----------
-TODO: List your cookbook attributes here.
+This cookbook create users from "users" data_bag.
 
-e.g.
-#### login_users::default
-<table>
-  <tr>
-    <th>Key</th>
-    <th>Type</th>
-    <th>Description</th>
-    <th>Default</th>
-  </tr>
-  <tr>
-    <td><tt>['login_users']['bacon']</tt></td>
-    <td>Boolean</td>
-    <td>whether to include bacon</td>
-    <td><tt>true</tt></td>
-  </tr>
-</table>
+#### users::100.json
+```
+{
+  "id": "100",
+  "username": "hogehoge",
+  "comment": "hoge user",
+  "home": "/home/hoge",
+  "password": "$1$WK4M.fB9$ieoValIoDwsoh5UBkFtN80",
+  "uid": 100,
+  "gid": 100,
+  "ssh_keys": "ssh-rsa AAA... ="
+}
+```
 
 Usage
 -----
